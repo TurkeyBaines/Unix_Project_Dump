@@ -70,5 +70,11 @@ public class DodgeThatGauntletShit extends Script {
                 c.paint.drawTileMatrix(g2d, wp, Color.RED);
             }
         }
+
+        if (availableTiles != null && !availableTiles.isEmpty()) {
+            for (WorldPoint wp : availableTiles) {
+                c.paint.drawTileMatric(g2d, wp, Color.GREEN);
+            }
+        }
     }
 }
