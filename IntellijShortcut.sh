@@ -1,13 +1,14 @@
-cat <<EOF > ~/Desktop/MyLauncher.desktop
+cat <<EOF > ~/Desktop/IntellijLauncher.desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=My Launcher
-Comment=Launch my application
-Exec=/path/to/your/application
-Icon=/path/to/icon.png
+Name=IntellijLauncher
+Comment=
+Exec=/idea.sh
+Icon=
+Path=/snap/intellij-idea-community/current/bin
 Terminal=false
-Categories=Utility;
+StartupNotify=false
 EOF
 
-chmod +x ~/Desktop/MyLauncher.desktop
+chmod +x ~/Desktop/IntellijLauncher.desktop
